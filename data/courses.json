@@ -1,1 +1,40 @@
-
+{
+  "featuredCourseId": "onboarding-office-net",
+  "courses": [
+    {
+      "id": "onboarding-office-net",
+      "title": "Onboarding Office Net (Boas-vindas)",
+      "description": "Cultura, padrão de atendimento e rotina interna. Comece por aqui.",
+      "category": "Cursos Internos",
+      "level": "Básico",
+      "tags": ["atendimento", "processos", "padrão"],
+      "lessons": [
+        { "id": "aula-01", "title": "Boas-vindas e visão geral", "videoId": "dQw4w9WgXcQ", "duration": "06:20" },
+        { "id": "aula-02", "title": "Padrão de atendimento no WhatsApp", "videoId": "dQw4w9WgXcQ", "duration": "09:10" }
+      ]
+    },
+    {
+      "id": "tutoriais-sistemas-crm",
+      "title": "Sistema/CRM: Operação do dia a dia",
+      "description": "Como registrar atendimento, abrir ordens e acompanhar status.",
+      "category": "Tutoriais de Sistemas",
+      "level": "Intermediário",
+      "tags": ["crm", "ordens", "rotina"],
+      "lessons": [
+        { "id": "aula-01", "title": "Entrando e navegando no sistema", "videoId": "dQw4w9WgXcQ", "duration": "07:40" },
+        { "id": "aula-02", "title": "Abrindo/encerrando atendimentos", "videoId": "dQw4w9WgXcQ", "duration": "10:05" }
+      ]
+    },
+    {
+      "id": "clientes-wifi-cobertura",
+      "title": "Tutoriais para clientes: Wi-Fi e cobertura",
+      "description": "Explicações simples + checklist pra resolver rápido com o cliente.",
+      "category": "Tutoriais para Clientes",
+      "level": "Básico",
+      "tags": ["wifi", "suporte", "roteador"],
+      "lessons": [
+        { "id": "aula-01", "title": "2.4G vs 5G (como explicar pro cliente)", "videoId": "dQw4w9WgXcQ", "duration": "05:30" }
+      ]
+    }
+  ]
+}
