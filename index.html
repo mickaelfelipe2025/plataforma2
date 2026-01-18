@@ -1,1 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Office Net | Treinamentos</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="./">
+      <span class="logo" aria-hidden="true"></span>
+      <div>
+        <strong>Office Net</strong>
+        <small>Treinamentos Internos</small>
+      </div>
+    </a>
+
+    <div class="search">
+      <input id="q" placeholder="Buscar curso, tag, categoria..." autocomplete="off" />
+      <button id="btnClear" title="Limpar busca" aria-label="Limpar busca">×</button>
+    </div>
+
+    <div class="pill" title="Progresso salvo neste navegador">
+      <span class="dot" aria-hidden="true"></span>
+      <span id="kpi">Carregando...</span>
+    </div>
+  </header>
+
+  <main id="app" class="app"></main>
+
+  <!-- Modal Player -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Player do curso">
+      <div class="modal__head">
+        <div>
+          <strong id="mTitle">Título</strong>
+          <small id="mMeta">Categoria • Nível</small>
+        </div>
+
+        <div class="modal__headActions">
+          <button id="btnResetCourse" class="x ghost" title="Limpar progresso deste curso">Reset do curso</button>
+          <button class="x" data-close>Fechar</button>
+        </div>
+      </div>
+
+      <div class="player">
+        <iframe id="mFrame" src="" allowfullscreen
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+      </div>
+
+      <div class="modal__body">
+        <div class="lessons" id="mLessons"></div>
+        <div class="side" id="mSide"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
